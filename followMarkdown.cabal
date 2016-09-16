@@ -1,0 +1,27 @@
+name:                followMarkdown
+version:             0.1.0.0
+synopsis:            Replace links in a markdown file by the contents of the link targets
+-- description:         
+license:             MIT
+author:              Arie Peterson
+maintainer:          ariep@xs4all.nl
+-- copyright:           
+category:            Text
+build-type:          Simple
+cabal-version:       >= 1.10
+
+executable followMarkdown
+  main-is:             Main.hs
+  other-modules:
+  build-depends:
+    base >= 4.6 && < 4.10
+    , attoparsec >= 0.13 && <= 0.14
+    , pipes >= 4.1.9 && < 4.2
+    , pipes-safe >= 2.2.4 && < 2.3
+    , pipes-text >= 0.0.2.4 && < 0.1
+    , text >= 1.2 && < 1.3
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+  default-extensions:
+    OverloadedStrings
+    ScopedTypeVariables
